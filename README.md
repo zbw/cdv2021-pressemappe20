@@ -1,6 +1,6 @@
 # Pressemappe 20. Jahrhundert - Personen- und Firmendossiers
 
-_Datenset Version 3_
+_WORK IN PROGRESS - Preliminary Dataset (based on cdv2018-pressemappe20 version 3)_
 
 [ZBW - Leibniz-Informationszentrum Wirtschaft](http://www.zbw.eu) (Kiel/Hamburg)
 
@@ -30,7 +30,7 @@ AG](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/co/0459xx/
 Für "Coding da Vinci Rhein-Main 2018" haben wir die Dossiers des Personen- und
 Firmenarchivs aufbereitet, die anzeigbare Dokumente bieten. Sie sind mit
 [kontrollierten
-Vokabularen](https://github.com/zbw/cdv2018-pressemappe20/blob/master/sparql/README.md#controlled-vocabularies-parameterized-queries)
+Vokabularen](https://github.com/zbw/cdv2021-pressemappe20/blob/master/sparql/README.md#controlled-vocabularies-parameterized-queries)
 mehrdimensional erschlossen.
 
 Gegenstand der Mappe  | Anzahl | mit GND | mit Wikidata
@@ -65,19 +65,20 @@ diese Dokumente kann die ZBW keine Lizenzen an Dritte erteilen._
 
 Die Daten stehen als [Download](https://doi.org/10.5281/zenodo.1410553)
 sowie online über einen [SPARQL-Endpoint](http://zbw.eu/beta/sparql/pm20/query)
-([Formular](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/search_folders_by_text.rq))
+([Formular](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2021-pressemappe20/contents/sparql/search_folders_by_text.rq))
 zur Verfügung. Als Format wurde JSON-LD gewählt, das sowohl mit den üblichen
 Web-Tools und -Bibliotheken als auch mit Linked-Data-Tools verarbeitet werden
 kann ([Format-Dokumentation, mit Beispielen](data/doku.md)).  Ein
-[Github-Repository](https://github.com/zbw/cdv2018-pressemappe20) soll
+[Github-Repository](https://github.com/zbw/cdv2021-pressemappe20) soll
 Codebeispiele und eventuelle Updates des Datengebers zur Verfügung stellen und
 es zugleich ermöglichen, Fragen und Issues zu adressieren. 
 
 
 ## Weitere Hintergrundinformationen
 
-* [PM20-Website](http://webopac0.hwwa.de/PresseMappe20/index.cfm)
+* [PM20-Website (preliminary)](https://pm20.zbw.eu)
+* [PM20-Website (legacy)](http://webopac0.hwwa.de/PresseMappe20/index.cfm)
 * [Wikipedia-Artikel](https://de.wikipedia.org/wiki/Pressearchiv_20._Jahrhundert)
 * [Leibniz-Infrastrukturseite](https://www.leibniz-gemeinschaft.de/infrastrukturen/archive/pressearchiv-der-zbw/)
-* [Coding da Vinci Rhein-Main 2018](https://codingdavinci.de/events/rheinmain/)
+* [Coding da Vinci Schleswig-Holstein 2021](https://codingdavinci.de/de/events/schleswig-holstein)
 
