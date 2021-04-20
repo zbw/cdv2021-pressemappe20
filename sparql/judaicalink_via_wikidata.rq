@@ -1,7 +1,7 @@
 # Reach out to PM20 from JudaicaLink dataset via Wikidata
 # (not using any PM20 sparql endpoint)
 #
-PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+PREFIX gndo: <https://d-nb.info/standards/elementset/gnd#>
 PREFIX p: <http://www.wikidata.org/prop/>
 PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

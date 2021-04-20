@@ -2,7 +2,7 @@
 # and German Wikipedia page links
 #
 PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
-PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+PREFIX gndo: <https://d-nb.info/standards/elementset/gnd#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX schema: <http://schema.org/>
