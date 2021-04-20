@@ -1,6 +1,8 @@
 # Pressemappe 20. Jahrhundert - Personen- und Firmendossiers
 
-_WORK IN PROGRESS - Preliminary Dataset (based on cdv2018-pressemappe20 version 3)_
+_WORK IN PROGRESS - Preliminary Dataset (based on the
+[cdv2018-pressemappe20](https://github.com/zbw/cdv2018-pressemappe20)  version
+3)_
 
 [ZBW - Leibniz-Informationszentrum Wirtschaft](http://www.zbw.eu) (Kiel/Hamburg)
 
@@ -27,7 +29,7 @@ Gandhi](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/pe/005
 oder die [Hamburg-Bremer Afrika Linie
 AG](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/co/0459xx/045931.xml).
 
-Für "Coding da Vinci Rhein-Main 2018" haben wir die Dossiers des Personen- und
+Für "Coding da Vinci Schleswig-Holstein 2021" haben wir die Dossiers des Personen- und
 Firmenarchivs aufbereitet, die anzeigbare Dokumente bieten. Sie sind mit
 [kontrollierten
 Vokabularen](https://github.com/zbw/cdv2021-pressemappe20/blob/master/sparql/README.md#controlled-vocabularies-parameterized-queries)

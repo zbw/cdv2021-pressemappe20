@@ -12,7 +12,7 @@ where {
   ?pm20 a ?type ;
         zbwext:freeDocCount ?docCount ;
         dcterms:identifier ?pm20Id .
-  # restrictions for cdv2018
+  # restrictions for cdv2021
   filter(?type in (zbwext:PersonFolder, zbwext:CompanyFolder))
   filter(?docCount > 0)
   #
