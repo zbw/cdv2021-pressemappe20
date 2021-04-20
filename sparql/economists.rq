@@ -10,11 +10,11 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 #
 select distinct ?pm20 ?pm20Label ?info ?wpLink ('WP de' as ?wpLinkLabel) ?ddbLink ("Bilder" as ?ddbLinkLabel) ?econBizLink ("Werke" as ?econBizLinkLabel) ?dossier (str(?freeDocCount) as ?dossierLabel)
 where {
-  ?pm20 zbwext:activity [ schema:about "Wirtschaftswissenschaft" ] ;
-                                                                 dct:identifier ?pm20Id ;
-                                                                 skos:prefLabel ?pm20Label ;
-                                                                 zbwext:viewUrl ?dossier ;
-                                                                 zbwext:freeDocCount ?freeDocCount ;
+  ?pm20 zbwext:activity [ schema:about "Wirtschaftswissenschaft"@de ] ;
+        dct:identifier ?pm20Id ;
+        skos:prefLabel ?pm20Label ;
+        zbwext:viewUrl ?dossier ;
+        zbwext:freeDocCount ?freeDocCount ;
                                                                  .
   filter(?freeDocCount > 0)
   #
