@@ -78,9 +78,9 @@ es zugleich ermöglichen, Fragen und Issues zu adressieren.
 
 ## Weitere Hintergrundinformationen
 
-* [PM20-Website (preliminary)](https://pm20.zbw.eu)
+* [neue PM20-Website (vorläufig)](https://pm20.zbw.eu)
 * [PM20-Website (legacy)](http://webopac0.hwwa.de/PresseMappe20/index.cfm)
 * [Wikipedia-Artikel](https://de.wikipedia.org/wiki/Pressearchiv_20._Jahrhundert)
-* [Leibniz-Infrastrukturseite](https://www.leibniz-gemeinschaft.de/infrastrukturen/archive/pressearchiv-der-zbw/)
+* [PM20 in der Leibniz-Infrastruktur](https://leibnizarc.hypotheses.org/pressearchiv-des-leibniz-informationszentrums-wirtschaft)
 * [Coding da Vinci Schleswig-Holstein 2021](https://codingdavinci.de/de/events/schleswig-holstein)
 
