@@ -16,7 +16,7 @@ Leibniz-Informationszentrum Wirtschaft](http://zbw.eu) über fast hundert Jahre
 hinweg Material zu Personen, Firmen/Institutionen, Waren und Sachthemen aus
 über 1500 Publikationen gesammelt und aufbereitet. Die bis 1948
 veröffentlichten Dokumente (ca. 5,7 Mio.  Seiten) wurden in einem von der DFG
-geförderten Projekt digitalisiert. Sie werden nach und nach mit entsprechenden
+geförderten Projekt digitalisiert. Ein Teil davon wurde mit entsprechenden
 Metadaten erschlossen und über die Anwendung  [Pressemappe 20.
 Jahrhundert](http://webopac0.hwwa.de/PresseMappe20/index.cfm) (PM20) öffentlich
 zur Verfügung gestellt.
@@ -25,9 +25,9 @@ Darüber hinaus hat die ZBW die gesamten Metadaten(\*) unter CC0-Lizenz
 gestellt, um eine freie Community-Nutzung zu ermöglichen. Die Daten enthalten
 jeweils auch einen Link auf eine DFG-Viewer-Ansicht des Dossiers - Beispiele
 sind etwa [Mahatma
-Gandhi](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml)
+Gandhi](https://pm20.zbw.eu/dfgview/pe/005823)
 oder die [Hamburg-Bremer Afrika Linie
-AG](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/co/0459xx/045931.xml).
+AG](https://pm20.zbw.eu/dfgview/co/045931).
 
 Für "Coding da Vinci Schleswig-Holstein 2021" haben wir die Dossiers des Personen- und
 Firmenarchivs aufbereitet, die anzeigbare Dokumente bieten. Sie sind mit
@@ -37,8 +37,8 @@ mehrdimensional erschlossen.
 
 Gegenstand der Mappe  | Anzahl | mit GND | mit Wikidata
 ----------------------|--------|---------|-------------
-Person                | 5262 | 4176 | 4717
-Firma/Institution     | 7411 | 3515 | 1662
+Person                | 5284 | 4202 | 5302
+Firma/Institution     | 8301 | 3773 | 2184
 
 Da viele Datensätze Identifier aus der Gemeinsamen Normdatei (GND) und/oder aus
 Wikidata enthalten, können aus diesen verlinkten Datenbeständen weitere
