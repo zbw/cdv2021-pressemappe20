@@ -1,15 +1,15 @@
 # Overlap in CdV datasets PM20 and Judaicalink (via common GND)
 #
+PREFIX gndo: <https://d-nb.info/standards/elementset/gnd#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX gndo: <https://d-nb.info/standards/elementset/gnd#>
-PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
 #
 select distinct ?judaicalink ?judaicalinkLabel ?gnd (?gndId as ?gndLabel) ?pm20 ?pm20Label ?pm20ViewerLink ?pm20ViewerLinkLabel
 where {
   # get all data with GND from Judaicalink
-  service <http://data.judaicalink.org/sparql/query> {
+  service <https://data.judaicalink.org/sparql/query> {
     ?judaicalink gndo:gndIdentifier ?gndId ;
         skos:prefLabel ?judaicalinkLabel .
     # only use URIs built on GND
@@ -26,6 +26,6 @@ where {
   #
   # additional links/link labels
   bind(str(?docCount) as ?pm20ViewerLinkLabel) .
-  bind(uri(concat('http://d-nb.info/gnd/', ?gndId)) as ?gnd)
+  bind(uri(concat('https://d-nb.info/gnd/', ?gndId)) as ?gnd)
 } 
 
