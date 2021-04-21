@@ -10,7 +10,8 @@ select distinct ?judaicalink ?judaicalinkLabel ?gnd (?gndId as ?gndLabel) ?pm20 
 where {
   # get all data with GND from Judaicalink
   service <https://data.judaicalink.org/sparql/query> {
-    ?judaicalink gndo:gndIdentifier ?gndId ;
+    # use old form of GND ontology URL, before switch to https
+    ?judaicalink <http://d-nb.info/standards/elementset/gnd#gndIdentifier> ?gndId ;
         skos:prefLabel ?judaicalinkLabel .
     # only use URIs built on GND
     filter(strstarts(str(?judaicalink), 'http://data.judaicalink.org/data/gnd/'))
