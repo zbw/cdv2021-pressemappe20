@@ -1,7 +1,7 @@
-# Reach out to PM20 from JudaicaLink dataset via Wikidata
+# Reach out to PM20 from JudaicaLink endpoint via Wikidata.judaicalink.org/sparql/query/
 # (not using any PM20 sparql endpoint)
 #
-PREFIX gndo: <https://d-nb.info/standards/elementset/gnd#>
+PREFIX oldgndo: <http://d-nb.info/standards/elementset/gnd#>
 PREFIX p: <http://www.wikidata.org/prop/>
 PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -25,22 +25,18 @@ where {
     filter(?freeDocs > 0)
     #
     bind(strafter(str(?item), str(wd:)) as ?itemLabel)
-    bind(uri(concat('http://purl.org/pressemappe20/folder/', $pm20Id)) as ?pm20)
+    bind(uri(concat('http://purl.org/pressemappe20/folder/', ?pm20Id)) as ?pm20)
     #
     # construct viewer link
-    ##bind(uri(concat('https://pm20.zbw.eu/dfgview/', $pm20Id)) as ?pm20ViewerLink)
-    bind(substr(?pm20Id, 4, 4) as ?numStub)
-    bind(substr(?pm20Id, 4, 6) as ?num)
-    bind(uri(concat('http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/pe/', ?numStub, 'xx/', ?num, '.xml')) as ?pm20ViewerLink)
+    bind(uri(concat('https://pm20.zbw.eu/dfgview/', ?pm20Id)) as ?pm20ViewerLink)
   }
   #
   # get JudaicaLink persons with these identifiers
-  service <http://data.judaicalink.org/sparql/query> {
-    ?judaicalink gndo:gndIdentifier ?gndId ;
-                 skos:prefLabel ?judaicalinkLabel .
-    # only use Judaicalink URIs built on GND
-    filter(strstarts(str(?judaicalink), 'http://data.judaicalink.org/data/gnd/'))
-  }
+  ?judaicalink oldgndo:gndIdentifier ?gndId ;
+               skos:prefLabel ?judaicalinkLabel .
+  #
+  # only use Judaicalink URIs built on GND
+  filter(strstarts(str(?judaicalink), 'http://data.judaicalink.org/data/gnd/'))
 }
 order by ?judaicalinkLabel
 

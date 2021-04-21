@@ -46,6 +46,6 @@ List | Description
 Query | Description
 ------|------------
 [economists](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2021-pressemappe20/contents/sparql/economists.rq) | Economists with links to Wikipedia, DDB images, EconBizWorks
-[judaicalink_overlap](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2021-pressemappe20/contents/sparql/judaicalink_overlap.rq) | Overlap in CdV datasets by FID Jewish Studies and ZBW (JudaicaLink and PM20, via common GND)
-
+[judaicalink_overlap](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2021-pressemappe20/contents/sparql/judaicalink_overlap.rq) | Overlap in CdV 2018 datasets by FID Jewish Studies and ZBW (JudaicaLink and PM20, via common GND)
+[judaicalink_via_wikidata](http://zbw.eu/beta/sparql-lab/?endpoint=http://data.judaicalink.org/sparql/query&queryRef=https://api.github.com/repos/zbw/cdv2021-pressemappe20/contents/sparql/judaicalink_via_wikidata.rq) | Overlap in CdV 2018 datasets by FID Jewish Studies and ZBW (on common GND), as given by a federated query on the Judaicalink endpoint, reaching out to the Wikidata endpoint (w/o any PM20 endpoint involved)
 
