@@ -1,4 +1,4 @@
-# Reach out to PM20 from JudaicaLink endpoint via Wikidata.judaicalink.org/sparql/query/
+# Reach out from JudaicaLink endpoint to PM20 via Wikidata
 # (not using any PM20 sparql endpoint)
 #
 PREFIX oldgndo: <http://d-nb.info/standards/elementset/gnd#>
@@ -11,7 +11,7 @@ PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
 #
-select distinct ?judaicalink ?judaicalinkLabel ?gndId ?item ?itemLabel ?pm20 (?pm20Id as
+select distinct ?judaicalink ?judaicalinkLabel ?gnd (?gndId as ?gndLabel) ?item ?itemLabel ?pm20 (?pm20Id as
   ?pm20Label) ?pm20ViewerLink ('view PM20 folder' as ?pm20ViewerLinkLabel)
 where {
   # get all Wikidata persons with PM20 folders and GND Id
@@ -37,6 +37,8 @@ where {
   #
   # only use Judaicalink URIs built on GND
   filter(strstarts(str(?judaicalink), 'http://data.judaicalink.org/data/gnd/'))
+  #
+  bind(uri(concat('https://d-nb.info/gnd/', ?gndId)) as ?gnd)
 }
 order by ?judaicalinkLabel
 
