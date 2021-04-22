@@ -1,6 +1,6 @@
 # Pressemappe 20. Jahrhundert - Personen- und Firmendossiers
 
-_WORK IN PROGRESS - Preliminary Dataset (based on the
+_WORK IN PROGRESS - Preliminary Dataset version 4 (based on the
 [cdv2018-pressemappe20](https://github.com/zbw/cdv2018-pressemappe20)  version
 3)_
 
@@ -65,7 +65,7 @@ diese Dokumente kann die ZBW keine Lizenzen an Dritte erteilen._
 
 ## Datenbereitstellung
 
-Die Daten stehen als [Download](https://doi.org/10.5281/zenodo.1410553)
+Die Daten stehen als [Download](https://doi.org/10.5281/zenodo.4708819)
 sowie online über einen [SPARQL-Endpoint](http://zbw.eu/beta/sparql/pm20/query)
 ([Formular](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2021-pressemappe20/contents/sparql/search_folders_by_text.rq))
 zur Verfügung. Als Format wurde JSON-LD gewählt, das sowohl mit den üblichen
