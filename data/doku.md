@@ -1,5 +1,7 @@
 # Dokumentation des Datenformats
 
+_TODO: Update für CdV2021_
+
 Im folgenden wird eine vorläufiges und noch sehr ausschnitsweises Datenformat
 verwendet. Die Veröffentlichung der Pressemappen-Daten steht noch am Anfang.
 Insbesondere harren die intern benutzten kontrollierten Vokabulare noch einer
@@ -129,7 +131,7 @@ Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben
 
 Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
 
-Alle __kontrollierten Vokabulare__ sind hier [hier](https://github.com/zbw/cdv2021-pressemappe20/tree/master/sparql#controlled-vocabularies-parameterized-queries) verlinkt - mit Drill-Down bis auf Mappenebene!
+Alle __kontrollierten Vokabulare__ sind [hier](https://github.com/zbw/cdv2021-pressemappe20/tree/master/sparql#controlled-vocabularies-parameterized-queries) verlinkt - mit Drill-Down bis auf Mappenebene!
 
 
 ## Daten über die Mappe
