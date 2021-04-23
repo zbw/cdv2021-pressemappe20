@@ -46,21 +46,6 @@
       ],
       "member": [
         {
-          "name": "Borsig, Ernst von",
-          "roleName": [
-            {
-              "@language": "en",
-              "@value": "Management board"
-            },
-            {
-              "@language": "de",
-              "@value": "Leitung"
-            }
-          ],
-          "url": "http://purl.org/pressemappe20/folder/pe/002216",
-          "fromTo": "1894-1931"
-        },
-        {
           "name": "Borsig, August",
           "roleName": [
             {
@@ -74,6 +59,21 @@
           ],
           "url": "http://purl.org/pressemappe20/folder/pe/002215",
           "fromTo": "1837-1854"
+        },
+        {
+          "name": "Borsig, Ernst von",
+          "roleName": [
+            {
+              "@language": "en",
+              "@value": "Management board"
+            },
+            {
+              "@language": "de",
+              "@value": "Leitung"
+            }
+          ],
+          "url": "http://purl.org/pressemappe20/folder/pe/002216",
+          "fromTo": "1894-1931"
         }
       ],
       "subOrganization": [
@@ -105,13 +105,21 @@
       "fromTo": "1837-2003",
       "includesInstitutionNamed": [
         {
-          "@id": "http://zbw.eu/beta/instname/90536"
+          "@id": "http://zbw.eu/beta/instname/90536",
+          "name": "Rheinmetall Borsig AG",
+          "note": "1935-1956",
+          "gndIdentifier": "64352-X"
         },
         {
-          "@id": "http://zbw.eu/beta/instname/90529"
+          "@id": "http://zbw.eu/beta/instname/90529",
+          "name": "Borsig-Werk",
+          "gndIdentifier": "35000-X"
         },
         {
-          "@id": "http://zbw.eu/beta/instname/90540"
+          "@id": "http://zbw.eu/beta/instname/90540",
+          "name": "Borsig Lokomotiv-Werke GmbH",
+          "note": "1931-1944",
+          "gndIdentifier": "5327116-6"
         }
       ],
       "reportCount": 0,
@@ -122,17 +130,23 @@
       ],
       "gndIdentifier": "6055420-4  ",
       "relatedCorporateBody": [
-        {},
-        {}
+        {
+          "name": "Rheinmetall AG",
+          "url": "http://purl.org/pressemappe20/folder/co/019066"
+        },
+        {
+          "name": "Deutsche Babcock & Wilcox Dampfkesselwerke",
+          "url": "http://purl.org/pressemappe20/folder/co/002062"
+        }
       ],
       "succeedingCorporateBody": [
         {
-          "name": "Deutsche Industrie-Anlagen GmbH",
-          "url": "http://purl.org/pressemappe20/folder/co/056039"
-        },
-        {
           "name": "Babcock-Borsig AG",
           "url": "http://purl.org/pressemappe20/folder/co/005946"
+        },
+        {
+          "name": "Deutsche Industrie-Anlagen GmbH",
+          "url": "http://purl.org/pressemappe20/folder/co/056039"
         }
       ]
     },

@@ -27,6 +27,8 @@ where {
     ( schema:subOrganization )
     ( gndo:preceedingCorporateBody )
     ( gndo:succeedingCorporateBody )
+    ( gndo:relatedCorporateBody )
+    ( zbwext:includesInstitutionNamed )
   }
   # only person and company folders
   ?pm20 a ?class .
