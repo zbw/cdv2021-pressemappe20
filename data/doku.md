@@ -21,7 +21,9 @@ Die Veröffentlichung erfolgt im [JSON-LD](https://json-ld.org/)-Format. Es ist
 verknüpft. Zugleich kann es unter Außerachtlassen dieses Kontexts wie jedes
 andere JSON verarbeitet werden.
 
-Beispieldaten für ein Personen-Dossier:
+## Beispiele
+
+### Beispieldaten für ein Personen-Dossier
 
 ```json
 {
@@ -56,7 +58,9 @@ Beispieldaten für ein Personen-Dossier:
 }
 ```
 
-Beispieldaten für ein Firmen-Dossier:
+[Anzeige des Dossiers per DFG-Viewer-Link](https://pm20.zbw.eu/dfgview/pe/005823)
+
+### Beispieldaten für ein Firmen-Dossier
 
 ```json
 {
@@ -127,6 +131,12 @@ Beispieldaten für ein Firmen-Dossier:
   ]
 }
 ```
+
+[Anzeige des Dossiers per DFG-Viewer-Link](https://pm20.zbw.eu/dfgview/co/041389)
+
+
+## Datenbeschreibung
+
 Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben.
 
 Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
@@ -134,7 +144,7 @@ Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
 Alle __kontrollierten Vokabulare__ sind [hier](https://github.com/zbw/cdv2021-pressemappe20/tree/master/sparql#controlled-vocabularies-parameterized-queries) verlinkt - mit Drill-Down bis auf Mappenebene!
 
 
-## Daten über die Mappe
+### Daten über die Mappe
 
 Feld | Bezeichnung | Kommentar
 -----|-------------|----------
@@ -148,7 +158,7 @@ Feld | Bezeichnung | Kommentar
 `note` | Notiz | freier Text; bezieht sich z.T. auch auf den Mappengegenstand
 
 
-## Daten über den Gegenstand der Mappe
+### Daten über den Gegenstand der Mappe
 
 Feld | Bezeichnung | Kommentar
 -----|-------------|----------
@@ -158,7 +168,7 @@ Feld | Bezeichnung | Kommentar
 `wikipediaPage` | Wikipedia-Seite | aus Wikidata abgeleitet
 
 
-### Daten über Personen
+#### Daten über Personen
 
 Feld | Bezeichnung | Kommentar
 -----|-------------|----------
@@ -173,7 +183,7 @@ Feld | Bezeichnung | Kommentar
 `activity/fromTo` | zeitlicher Wirkungsbereich | nicht kontrolliertes Format
 
 
-### Daten über Firmen
+#### Daten über Firmen
 
 Feld | Bezeichnung | Kommentar
 -----|-------------|----------
@@ -205,7 +215,7 @@ Feld | Bezeichnung | Kommentar
 `reportCount` | Anzahl Geschäftsberichte | in der Dokumentanzahl enthalten
 
 
-## Bemerkungen zur Linked-Data-Umsetzung
+### Bemerkungen zur Linked-Data-Umsetzung
 
 Die verwendete RDF-Struktur ist noch experimentell und lediglich in
 [context.jsonld](./context.jsonld) dokumentiert. Einige der benutzten
