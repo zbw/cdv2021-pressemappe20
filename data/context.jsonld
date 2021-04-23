@@ -19,7 +19,7 @@
       "@id" : "zbwext:viewUrl",
       "@type":"@id"
     },
-    "wdIndentifier" : {
+    "wdIdentifier" : {
       "@id" : "zbwext:wdIdentifier",
       "@container" : "@set"
     },
