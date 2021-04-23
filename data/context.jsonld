@@ -39,8 +39,11 @@
       "@id" : "schema:industry",
       "@container" : "@set"
     },
+    "altLabel" : {
+      "@id" : "skos:altLabel",
+      "@container" : "@set"
+    },
     "prefLabel" : "skos:prefLabel",
-    "altLabel" : "skos:altLabel",
     "note" : "skos:note",
     "organizationType" : "dc:type",
     "identifier" : "dct:identifier",

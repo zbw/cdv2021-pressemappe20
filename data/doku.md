@@ -27,34 +27,65 @@ andere JSON verarbeitet werden.
 
 ```json
 {
-  "hasOccupation": "Führer der Unabhängigkeitsbewegung",
-  "gndIdentifier": "118639145",
-  "wdIndentifier": [
-    "Q1001"
-  ],
-  "temporal": "1922-",
-  "freeDocCount": 377,
-  "dateOfBirthAndDeath": "1869-1948",
-  "birthDate": "1869",
-  "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml",
-  "totalDocCount": 669,
-  "prefLabel": "Gandhi, Mohandas Karamchand",
-  "activity": [
-    {
-      "about": "Politik",
-      "location": [
-        "Indien"
-      ]
-    }
-  ],
-  "nationality": "Indien",
-  "identifier": "pe/005823",
   "@id": "http://purl.org/pressemappe20/folder/pe/005823",
   "@type": [
     "Pm20Folder",
     "PersonFolder"
   ],
-  "deathDate": "1948"
+  "identifier": "pe/005823",
+  "temporal": "1922-",
+  "hasOccupation": "Führer der Unabhängigkeitsbewegung",
+  "nationality": [
+    {
+      "@language": "en",
+      "@value": "India"
+    },
+    {
+      "@language": "de",
+      "@value": "Indien"
+    }
+  ],
+  "prefLabel": "Gandhi, Mohandas Karamchand",
+  "wikipediaPage": [
+    "https://de.wikipedia.org/wiki/Mohandas_Karamchand_Gandhi"
+  ],
+  "activity": [
+    {
+      "about": [
+        {
+          "@language": "en",
+          "@value": "Politics"
+        },
+        {
+          "@language": "de",
+          "@value": "Politik"
+        }
+      ],
+      "location": [
+        {
+          "@language": "en",
+          "@value": "India"
+        },
+        {
+          "@language": "de",
+          "@value": "Indien"
+        }
+      ]
+    }
+  ],
+  "freeDocCount": 443,
+  "totalDocCount": 669,
+  "viewUrl": "https://pm20.zbw.eu/dfgview/pe/005823",
+  "wdIdentifier": [
+    "Q1001"
+  ],
+  "dateOfBirthAndDeath": "1869-1948",
+  "gndIdentifier": "118639145",
+  "relatedPerson": [
+    {
+      "@id": "http://purl.org/pressemappe20/folder/pe/005820"
+    }
+  ]
 }
 ```
 
@@ -64,70 +95,150 @@ andere JSON verarbeitet werden.
 
 ```json
 {
-  "freeDocCount": 66,
-  "foundingDate": "1837",
-  "reportCount": 0,
-  "member": [
-    {
-      "url": "http://purl.org/pressemappe20/folder/pe/002215",
-      "roleName": "Gründer",
-      "name": "Borsig, August",
-      "fromTo": "1837-1854"
-    },
-    {
-      "url": "http://purl.org/pressemappe20/folder/pe/002216",
-      "roleName": "Leitung",
-      "name": "Borsig, Ernst von",
-      "fromTo": "1894-1931"
-    }
-  ],
-  "organizationType": "Unternehmen",
-  "prefLabel": "A. Borsig",
-  "gndIdentifier": "6055420-4",
-  "temporal": "1918,1927,1929-1937,1946-1960",
-  "succeedingCorporateBody": [
-    {
-      "url": "http://purl.org/pressemappe20/folder/co/056039",
-      "name": "Deutsche Industrie-Anlagen GmbH"
-    },
-    {
-      "url": "http://purl.org/pressemappe20/folder/co/005946",
-      "name": "Babcock-Borsig AG"
-    }
-  ],
-  "note": "1837 - Gründung der Eisengießerei A. Borsig in der Chausseestraße/ Oranienburger Tor, Berlin-Mitte, damals noch vor den Stadtmauern von Berlin.  - Die Borsigwerke in Tegel nehmen im Herbst 1898 die Produktion auf. 1933 erwarb Rheinmetall die A. Borsig GmbH; 1935 Namensänderung. Der Firmensitz wurde 1938 von Düsseldorf nach Berlin verlegt. 1939 weitere Werke in Sömmerda, Unterlüss u.a.",
-  "broaderLocation": [
-    "Berlin"
-  ],
-  "totalDocCount": 66,
-  "location": [
-    "Berlin-Tegel"
-  ],
-  "altLabel": [
-    "Borsig Lokomotiv-Werke GmbH <Henningsdorf> -- [1931-1944]",
-    "Rheinmetall Borsig AG <Berlin> -- [1935-1956]",
-    "Borsig-Werk <Berlin>"
-  ],
-  "dissolutionDate": "2003",
-  "subOrganization": [
-    {
-      "url": "http://purl.org/pressemappe20/folder/co/041863",
-      "name": "Borsigwerk Aktiengesellschaft in Oberschlesien"
-    }
-  ],
-  "wdIndentifier": [
-    "Q546769"
-  ],
   "@id": "http://purl.org/pressemappe20/folder/co/041389",
-  "industry": [
-    "Maschinen- und Anlagenbau"
-  ],
-  "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/co/0413xx/041389.xml",
-  "fromTo": "1837-2003",
-  "identifier": "co/041389",
   "@type": [
     "CompanyFolder",
     "Pm20Folder"
+  ],
+  "hasCountryCode": "DE",
+  "organizationType": [
+    {
+      "@language": "en",
+      "@value": "Company"
+    },
+    {
+      "@language": "de",
+      "@value": "Unternehmen"
+    }
+  ],
+  "identifier": "co/041389",
+  "temporal": "1918,1927,1929-1937,1946-1960",
+  "dissolutionDate": "2003",
+  "foundingDate": "1837",
+  "industry": [
+    {
+      "@language": "de",
+      "@value": "Maschinen- und Anlagenbau"
+    },
+    {
+      "@language": "en",
+      "@value": "Machinery Industry and Plant Construction"
+    }
+  ],
+  "location": [
+    {
+      "@language": "en",
+      "@value": "Tegel"
+    },
+    {
+      "@language": "de",
+      "@value": "Berlin-Tegel"
+    }
+  ],
+  "member": [
+    {
+      "name": "Borsig, August",
+      "roleName": [
+        {
+          "@language": "en",
+          "@value": "Founder"
+        },
+        {
+          "@language": "de",
+          "@value": "Gründer"
+        }
+      ],
+      "url": "http://purl.org/pressemappe20/folder/pe/002215",
+      "fromTo": "1837-1854"
+    },
+    {
+      "name": "Borsig, Ernst von",
+      "roleName": [
+        {
+          "@language": "en",
+          "@value": "Management board"
+        },
+        {
+          "@language": "de",
+          "@value": "Leitung"
+        }
+      ],
+      "url": "http://purl.org/pressemappe20/folder/pe/002216",
+      "fromTo": "1894-1931"
+    }
+  ],
+  "subOrganization": [
+    {
+      "name": "Borsigwerk Aktiengesellschaft in Oberschlesien",
+      "url": "http://purl.org/pressemappe20/folder/co/041863"
+    }
+  ],
+  "locatedIn": {
+    "@id": "http://sws.geonames.org/2823708"
+  },
+  "editorialNote": "Film: 494 (hier Material z.T. mit  A10 B 200 signiert !!!) ; Sitzland: Berlin.",
+  "notation": "A10 B 34",
+  "prefLabel": "A. Borsig",
+  "wikipediaPage": [
+    "https://de.wikipedia.org/wiki/Borsig_(Unternehmen)"
+  ],
+  "broaderLocation": [
+    {
+      "@language": "en",
+      "@value": "Berlin"
+    },
+    {
+      "@language": "de",
+      "@value": "Berlin"
+    }
+  ],
+  "freeDocCount": 66,
+  "fromTo": "1837-2003",
+  "includesInstitutionNamed": [
+    {
+      "@id": "http://zbw.eu/beta/instname/90536",
+      "name": "Rheinmetall Borsig AG",
+      "note": "1935-1956",
+      "gndIdentifier": "64352-X"
+    },
+    {
+      "@id": "http://zbw.eu/beta/instname/90529",
+      "name": "Borsig-Werk",
+      "gndIdentifier": "35000-X"
+    },
+    {
+      "@id": "http://zbw.eu/beta/instname/90540",
+      "name": "Borsig Lokomotiv-Werke GmbH",
+      "note": "1931-1944",
+      "gndIdentifier": "5327116-6"
+    }
+  ],
+  "reportCount": 0,
+  "totalDocCount": 66,
+  "viewUrl": "https://pm20.zbw.eu/dfgview/co/041389",
+  "wdIdentifier": [
+    "Q546769"
+  ],
+  "gndIdentifier": "6055420-4  ",
+  "relatedCorporateBody": [
+    {
+      "name": "Rheinmetall AG",
+      "url": "http://purl.org/pressemappe20/folder/co/019066"
+    },
+    {
+      "name": "Deutsche Babcock & Wilcox Dampfkesselwerke",
+      "url": "http://purl.org/pressemappe20/folder/co/002062"
+    }
+  ],
+  "succeedingCorporateBody": [
+    {
+      "name": "Babcock-Borsig AG",
+      "url": "http://purl.org/pressemappe20/folder/co/005946"
+    },
+    {
+      "name": "Deutsche Industrie-Anlagen GmbH",
+      "url": "http://purl.org/pressemappe20/folder/co/056039"
+    }
   ]
 }
 ```
