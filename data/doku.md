@@ -10,8 +10,7 @@ die Personen- und Firmendossiers, besonders diejenigen mit vielen Dokumenten,
 ist das Wikidata-Mapping dagegen schon fortgeschritten - siehe die
 [Mix-n-match](https://tools.wmflabs.org/mix-n-match/#/)-Kataloge unter dem
 Stichwort "PM20". Derzeit sind die Einträge aus konrollierten Vokabularen als
-Stringwerte wiedergegeben. Im Unterverzeichnis [raw](./raw) finden sich die
-umfassenden, nicht aufbereiteten Rohdaten.
+Stringwerte wiedergegeben.
 
 Auch die inhaltliche Klassifizierung der Firmen und deren Beziehungs-Netzwerke
 (Vorgänger/Nachfolger, übergeordnete/untergeordnete) sind "Work in Progress".
