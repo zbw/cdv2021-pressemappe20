@@ -1,8 +1,6 @@
 # Pressemappe 20. Jahrhundert - Personen- und Firmendossiers
 
-_WORK IN PROGRESS - Preliminary Dataset version 4 (based on the
-[cdv2018-pressemappe20](https://github.com/zbw/cdv2018-pressemappe20)  version
-3)_
+Dataset version 5
 
 [ZBW - Leibniz-Informationszentrum Wirtschaft](http://www.zbw.eu) (Kiel/Hamburg)
 

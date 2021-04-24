@@ -1,13 +1,11 @@
 # Dokumentation des Datenformats
 
-_TODO: Update für CdV2021_
-
-Im folgenden wird eine vorläufiges und noch sehr ausschnitsweises Datenformat
-verwendet. Die Veröffentlichung der Pressemappen-Daten steht noch am Anfang.
-Insbesondere harren die intern benutzten kontrollierten Vokabulare noch einer
-Konvertierung und eines Mappings nach [Wikidata](http://www.wikidata.org). Für
-die Personen- und Firmendossiers, besonders diejenigen mit vielen Dokumenten,
-ist das Wikidata-Mapping dagegen schon fortgeschritten - siehe die
+Im folgenden wird eine vorläufiges Datenformat verwendet.  Insbesondere harren
+die intern benutzten kontrollierten Vokabulare noch einer Konvertierung und
+eines Mappings nach [Wikidata](http://www.wikidata.org). Die Personendossiers
+sind vollständig mit Wikidata verknüpft; für Firmendossiers, besonders
+diejenigen mit vielen Dokumenten, ist das Wikidata-Mapping auch schon
+fortgeschritten - siehe die
 [Mix-n-match](https://tools.wmflabs.org/mix-n-match/#/)-Kataloge unter dem
 Stichwort "PM20". Derzeit sind die Einträge aus konrollierten Vokabularen als
 Stringwerte wiedergegeben.
@@ -82,7 +80,8 @@ andere JSON verarbeitet werden.
   "gndIdentifier": "118639145",
   "relatedPerson": [
     {
-      "@id": "http://purl.org/pressemappe20/folder/pe/005820"
+      "name": "Gandhi <Familie>",
+      "url": "http://purl.org/pressemappe20/folder/pe/005820"
     }
   ]
 }
@@ -173,7 +172,7 @@ andere JSON verarbeitet werden.
     }
   ],
   "locatedIn": {
-    "@id": "http://sws.geonames.org/2823708"
+    "url": "http://sws.geonames.org/2823708"
   },
   "editorialNote": "Film: 494 (hier Material z.T. mit  A10 B 200 signiert !!!) ; Sitzland: Berlin.",
   "notation": "A10 B 34",
@@ -248,10 +247,14 @@ andere JSON verarbeitet werden.
 ## Datenbeschreibung
 
 Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben.
+Für Felder, die mit "de/en" gekennzeichnet sind, werden deutsche und englische
+Bezeichnungen ausgegeben.
 
 Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
 
-Alle __kontrollierten Vokabulare__ sind [hier](https://github.com/zbw/cdv2021-pressemappe20/tree/master/sparql#controlled-vocabularies-parameterized-queries) verlinkt - mit Drill-Down bis auf Mappenebene!
+Alle __kontrollierten Vokabulare__ sind
+[hier](https://github.com/zbw/cdv2021-pressemappe20/tree/master/sparql#controlled-vocabularies-parameterized-queries)
+verlinkt - mit Drill-Down bis auf Mappenebene!
 
 
 ### Daten über die Mappe
@@ -266,6 +269,7 @@ Feld | Bezeichnung | Kommentar
 `totalDocCount` | Gesamtzahl der Dokumente | der Mappe
 `freeDocCount` | Anzahl der online zugänglichen Dokumente | der Mappe
 `note` | Notiz | freier Text; bezieht sich z.T. auch auf den Mappengegenstand
+`editorialNote` | Bearbeitungsnotiz | freier Text
 
 
 ### Daten über den Gegenstand der Mappe
@@ -275,40 +279,51 @@ Feld | Bezeichnung | Kommentar
 `prefLabel` | Name | der Person oder Firma, zugleich verwendet als Mappentitel
 `gndIdentifier` | GND ID | [Gemeinsame Normdatei](https://de.wikipedia.org/wiki/Gemeinsame_Normdatei) der deutschsprachigen Bibliotheken
 `wdIdentifier` | Wikidata Item ID (QID) | aus Wikidata abgeleitet. Kann mehrfach auftreten, weil Mappen mehrere Items betreffen können. Umgekehrt kann es zu umfangreichen Themen (z.B. Reichsbahn) mehrere Mappen geben.
-`wikipediaPage` | Wikipedia-Seite | aus Wikidata abgeleitet
+`wikipediaPage` | Deutsche Wikipedia-Seite | aus Wikidata abgeleitet
 
 
 #### Daten über Personen
 
 Feld | Bezeichnung | Kommentar
 -----|-------------|----------
-`nationality` | Nationalität | kontrolliertes Vokabular
+`nationality` | Nationalität | kontrolliertes Vokabular (de/en)
 `hasOccupation` | Tätigkeit | freier Text
 `dateOfBirthAndDeath` | Lebensdaten | nicht kontrolliertes Format
 `birthDate` | Geburtsjahr | abgeleitet aus `dateOfBirthAndDeath`
 `deathDate` | Todesjahr | abgeleitet aus `dateOfBirthAndDeath`
 `activity` | Wirkungsbereich |
-`activity/about` | sachlicher Wirkungsbereich | kontrolliertes Vokabular
-`activity/location` | geografischer Wirkungsbereich | konrtolliertes Vokabular (Länder)
+`activity/about` | sachlicher Wirkungsbereich | kontrolliertes Vokabular (de/en)
+`activity/location` | geografischer Wirkungsbereich | konrtolliertes Vokabular (Länder) (de/en)
 `activity/fromTo` | zeitlicher Wirkungsbereich | nicht kontrolliertes Format
+`relatedPerson` | verwandte Person | 
+`relatedPerson/name` | Name der verwandten Person | 
+`relatedPerson/url` | URL der verwandten Person | 
+`isPartOf` | ist Teil einer Familie | URL
+`isPartOf/name` | Name der Familie | 
+`isPartOf/url` | URL der Familie | 
+`hasPart` | Familie hat Angehörige | 
+`hasPart/name` | Name der Person | 
+`hasPart/url` | URL der Person | 
 
 
 #### Daten über Firmen
 
 Feld | Bezeichnung | Kommentar
 -----|-------------|----------
-`organizationType` | Art der Organisation | kontrolliertes Vokabular
+`organizationType` | Art der Organisation | kontrolliertes Vokabular (de/en)
 `altLabel` | andere Namen | schließt manchmal kleinere Tochterfirmen oder Aufkäufe ein
-`industry` | Branche | kontrolliertes Vokabular
-`location` | Sitz | kontrolliertes Vokabular
-`broaderLocation` | übergeordnete Lokation | kontrolliertes Vokabular
+`industry` | Branche | kontrolliertes Vokabular (de/en)
+`location` | Sitz | kontrolliertes Vokabular (de/en)
+`broaderLocation` | übergeordnete Lokation | kontrolliertes Vokabular (de/en)
+`locatedIn/url` | URL des Geonames features | 
+`hasCountryCode` | Ländercode | zweibuchstabiger ISO-3166 Code
 `fromTo` | Zeit, während der die Firma bestand | nicht kontrolliertes Format
 `foundingDate` | Gründungsjahr | abgeleitet aus `fromTo`
 `dissolutionDate` | Jahr der Auflösung | abgeleitet aus `fromTo`
 `member` | Beziehung zu einer Personenmappe | Gründer etc.
 `member/url` | Schlüssel für die Person |
 `member/name` | Name der Person | entsprechend `url`
-`member/roleName` | Rolle | Funktion; kontrolliertes Vokabular
+`member/roleName` | Rolle | Funktion; kontrolliertes Vokabular (de/en)
 `member/fromTo` | Zeitraum | in dem die Person die Funktion eingenommen hat; nicht kontrolliertes Format
 `parentOrganization` | übergeordnete Firma/Institution |
 `parentOrganization/url` | Schlüssel der Firmenmappe |
@@ -322,7 +337,15 @@ Feld | Bezeichnung | Kommentar
 `succeedingCorporateBody` | Nachfolgerorganisation |
 `succeedingCorporateBody/url` | Schlüssel der Firmenmappe |
 `succeedingCorporateBody/name` | Name der Firma/Institution |
+`relatedCorporateBody` | verwandte  Organisation |
+`relatedCorporateBody/url` | Schlüssel der Firmenmappe |
+`relatedCorporateBody/name` | Name der Firma/Institution |
+`includesInstitutionNamed` | umfasst auch | weitere Bezeichnung, oder auch weitere Institution, die von der Mappe eingeschlossen wird
+`includesInstitutionNamed/name` | Name der Firma/Institution | 
+`includesInstitutionNamed/gndIdentifier` | GND ID der Firma/Institution | 
+`includesInstitutionNamed/note` | Notiz | z.B. zur zeitlichen Erstreckung
 `reportCount` | Anzahl Geschäftsberichte | in der Dokumentanzahl enthalten
+`notation` | Signatur |
 
 
 ### Bemerkungen zur Linked-Data-Umsetzung

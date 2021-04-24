@@ -1,6 +1,17 @@
 # Changes
 
-## Dataset version 4 (preliminary)
+## Dataset version5
+
+- Add `relatedPerson`, `isPartOf`, `hasPart`
+- Add `hasCountryCode`
+- Add `locatedIn` (linking to Geonames)
+- Add `relatedCorporateBody`
+- Add `includesInstitutionNamed`
+- Add `notation`
+- Add `editorialNote`
+- Fix wd:Identifier
+
+## Dataset version4 (preliminary)
 
 - Referece CDV 2021 SH
 
