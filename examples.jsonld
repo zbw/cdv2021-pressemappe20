@@ -83,10 +83,11 @@
         }
       ],
       "locatedIn": {
-        "@id": "http://sws.geonames.org/2823708"
+        "url": "http://sws.geonames.org/2823708"
       },
       "editorialNote": "Film: 494 (hier Material z.T. mit  A10 B 200 signiert !!!) ; Sitzland: Berlin.",
       "notation": "A10 B 34",
+      "note": "1837 - Gründung der Eisengießerei A. Borsig in der Chausseestraße/ Oranienburger Tor, Berlin-Mitte, damals noch vor den Stadtmauern von Berlin.  - Die Borsigwerke in Tegel nehmen im Herbst 1898 die Produktion auf. 1933 erwarb Rheinmetall die A. Borsig GmbH; 1935 Namensänderung. Der Firmensitz wurde 1938 von Düsseldorf nach Berlin verlegt. 1939 weitere Werke in Sömmerda, Unterlüss u.a.",
       "prefLabel": "A. Borsig",
       "wikipediaPage": [
         "https://de.wikipedia.org/wiki/Borsig_(Unternehmen)"
@@ -207,7 +208,8 @@
       "gndIdentifier": "118639145",
       "relatedPerson": [
         {
-          "@id": "http://purl.org/pressemappe20/folder/pe/005820"
+          "name": "Gandhi <Familie>",
+          "url": "http://purl.org/pressemappe20/folder/pe/005820"
         }
       ]
     }

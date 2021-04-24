@@ -1,7 +1,9 @@
 # Extract subset of PM20 for CdV2021
 #
-PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX frapo: <http://purl.org/cerif/frapo/>
+PREFIX gn: <http://www.geonames.org/ontology#>
 PREFIX gndo: <https://d-nb.info/standards/elementset/gnd#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <http://schema.org/>
@@ -20,6 +22,14 @@ construct {
   ?activity ?actProp ?actValue .
   ?pm20 ?companyRelation ?otherCompany .
   ?otherCompany ?comProp ?comValue .
+  ?pm20 gn:locatedIn ?geoLoc .
+  ?geoLoc ?geoProp ?geoValue .
+  ?pm20 gndo:relatedPerson ?relPers .
+  ?relPers ?relPersProp ?relPersValue .
+  ?pm20 dct:hasPart ?famPers .
+  ?famPers ?famPersProp ?famPersValue .
+  ?pm20 dct:isPartOf ?fam .
+  ?fam ?famProp ?famValue .
 }
 where {
   values ( ?companyRelation ) {
@@ -33,7 +43,7 @@ where {
   # only person and company folders
   ?pm20 a ?class .
   filter(?class in (zbwext:PersonFolder, zbwext:CompanyFolder))
-  ?pm20 dcterms:identifier ?id .
+  ?pm20 dct:identifier ?id .
   #
   # only folders with freely viewable documents
   ?pm20 zbwext:freeDocCount ?docCount .
@@ -65,8 +75,28 @@ where {
     ?otherCompany ?comProp ?comValue .
   }
   #
+  # related persons
+  optional {
+    ?pm20 gndo:relatedPerson ?relPers .
+    ?relPers ?relPersProp ?relPersValue .
+  }
+  optional {
+    ?pm20 dct:hasPart ?famPers .
+    ?famPers ?famPersProp ?famPersValue .
+  }
+  optional {
+    ?pm20 dct:isPartOf ?fam .
+    ?fam ?famProp ?famValue .
+  }
+  #
+  # geo locaton of a company
+  optional {
+    ?pm20 gn:locatedIn ?geoLoc .
+    ?geoLoc ?geoProp ?geoValue .
+  }
+  #
   # information from Wikidata
-  ?pm20 dcterms:identifier ?pm20Id .
+  ?pm20 dct:identifier ?pm20Id .
   optional {
     graph <http://zbw.eu/beta/wikidata/ng> {
       ?wd wdt:P4293 ?pm20Id .
