@@ -43,11 +43,17 @@
       "@id" : "skos:altLabel",
       "@container" : "@set"
     },
+    "temporal" : {
+      "@id" : "dct:temporal",
+      "@container" : "@set"
+    },
+    "note" : {
+      "@id" : "skos:note",
+      "@container" : "@set"
+    },
     "prefLabel" : "skos:prefLabel",
-    "note" : "skos:note",
     "organizationType" : "dc:type",
     "identifier" : "dct:identifier",
-    "temporal" : "dct:temporal",
     "birthDate" : "schema:birthDate",
     "deathDate" : "schema:deathDate",
     "hasOccupation" : "schema:hasOccupation",
